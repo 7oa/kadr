@@ -1,0 +1,93 @@
+html,
+body {
+  height: 100%;
+  min-width: 1200px;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.42;
+}
+.content {
+  flex: 1 0 auto;
+}
+a{
+  text-decoration: none;
+  color: $green-d;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+input:focus,
+textarea:focus{
+  outline: none;
+}
+textarea{
+  resize: vertical;
+}
+.container{
+  width: 1200px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.flex{
+  display: flex;
+  &_sb{
+    justify-content: space-between;
+  }
+}
+.flex-3{
+  width: 75%;
+}
+.flex-1{
+  width: 25%;
+}
+.h-l{
+  text-transform: uppercase;
+  font-weight: $bold;
+  font-size: 22px;
+}
+.h-m{
+  text-transform: uppercase;
+  font-weight: $bold;
+  font-size: 20px;
+}
+.h-s{
+  text-transform: uppercase;
+  font-weight: $bold;
+  font-size: 16px;
+}
+.red{
+  color: $red;
+}
+.slick-arrow{
+  position: absolute;
+  font-size: 0;
+  line-height: 0;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  background-image: url('images/next.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  display: block;
+  background-size: contain;
+  border: 0;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  &:focus{
+    outline: none;
+  }
+}
+.slick-prev{
+  transform: rotate(180deg);
+}
+.bg-green{
+  background-color: $green-l;
+}

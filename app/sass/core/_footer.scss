@@ -1,0 +1,145 @@
+.footer{
+  flex: 0 0 auto;
+  color: $white;
+  width: 100%;
+  background: $green-d;
+}
+.footer-cnt{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footer-c1{
+  position: relative;
+  &__ttl{
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: $bold;
+  }
+  &__ul{
+    font-size: 13px;
+    a{
+      color: $white;
+    }
+  }
+  &__btns{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+  }
+  &__ya-dz{
+    display: block;
+    border: 1px solid #222;
+    background-color: yellow;
+    color: $black;
+    margin-right: 10px;
+    padding: 5px 10px;
+    flex: 0 0 auto;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  &__ya-tlgrm{
+    display: block;
+    border: 1px solid #222;
+    background-color: dodgerblue;
+    color: $white;
+    padding: 5px 10px;
+    flex: 0 0 auto;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+.footer-c2{
+  position: relative;
+  &__ttl{
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: $bold;
+  }
+  &__ul{
+    a{
+      color: $white;
+    }
+  }
+  &__btns{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+  }
+}
+.footer-logo{
+  @include bg-img(contain);
+  width: 250px;
+  height: 41px;
+}
+.footer-tel{
+  font-size: 30px;
+  font-weight: $bold;
+}
+.footer-c3{
+  a{
+    color: $white;
+  }
+  &__ttl{
+    margin-bottom: 10px;
+  }
+  &__calendar{
+    background-color: $white;
+    margin-bottom: 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    a{
+      color: $black;
+    }
+  }
+}
+.footer-c4{
+  position: relative;
+}
+.footer-developers{
+  position: absolute;
+  bottom: 0;
+  a{
+    color: $white;
+  }
+  &__link{
+    display: flex;
+    align-items: center;
+    &:before{
+      content: '';
+      background-image: url('images/f5-logo.png');
+      @include bg-img(cover);
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      display: block;
+    }
+  }
+}
+.footer-ss{
+  display: flex;
+  &__item{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    @include bg-img(contain);
+    background-color: $white;
+    &_vk{
+      background-image: url('images/vk.svg');
+    }
+    &_fb{
+      background-image: url('images/facebook.svg');
+    }
+    &_ig{
+      background-image: url('images/instagram.svg');
+    }
+    &_tw{
+      background-image: url('images/twitter.svg');
+    }
+  }
+}

@@ -1,0 +1,129 @@
+extends core/_template
+
+append sharedVars
+	- var activeMenu = 'Главная';
+
+block title
+	title=activeMenu
+
+block content
+	.workarea
+		.page.page-index
+			.page-index__bl1
+				.container
+					.flex
+						.flex-3.
+							Товарищи! новая модель организационной деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Товарищи! консультация с широким активом позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.Товарищи! новая модель организационной деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Товарищи! консультация с широким активом позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.Товарищи! новая модель организационной деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Товарищи! консультация с широким активом позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.Товарищи! новая модель организационной деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Товарищи! консультация с широким активом позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.
+						.flex-1 вакансии срочно
+			.page-index__bl2
+				.container
+					.flex
+						.flex-3
+							.vacan-prev
+								.vacan-prev__h.h-l Свежие вакансии в Архангельске
+								.vacan-prev__list
+									- for (var i=1; i<=8; i++)
+										.vacan-prev__item.flex.flex_sb
+											.vacan-prev__cnt
+												a.vacan-prev__ttl.h-s(href="#") Оператор-диспетчер sdfsdf
+												.vacan-prev__sub ООО "Жорж"
+											.vacan-prev__price 23 000
+										.vacan-prev__item.flex.flex_sb
+											.vacan-prev__cnt
+												a.vacan-prev__ttl.h-s(href="#") Администратор
+												.vacan-prev__sub в сауну "Рай"
+											.vacan-prev__price 23 000
+										.vacan-prev__item.flex.flex_sb
+											.vacan-prev__cnt
+												a.vacan-prev__ttl.h-s(href="#") Дворник
+											.vacan-prev__price 3 000
+						.flex-1
+							.vacan-hot
+								.vacan-hot__h.h-l Вакансии <span class="red">срочно!</span>
+								.vacan-hot__list
+									.vacan-hot__item
+										a.vacan-hot__ttl.h-s(href="#") Повар
+										.vacan-hot__label в ресторан в центре города
+									.vacan-hot__item
+										a.vacan-hot__ttl.h-s(href="#") Специалист по кадрам
+										.vacan-hot__label в ресторан в центре города
+									.vacan-hot__item
+										a.vacan-hot__ttl.h-s(href="#") Администратор
+										.vacan-hot__label в ресторан в центре города
+									.vacan-hot__item
+										a.vacan-hot__ttl.h-s(href="#") Специалист по кадрам
+										.vacan-hot__label в ресторан в центре города
+							.vacan-contest
+								.vacan-contest__h Конкурс на вакансию
+								.vacan-contest__item
+									a.vacan-contest__ttl(href="#") Название вакансии очень длинное и сложное
+									.vacan-contest__body.flex
+										a.vacan-contest__img(href="#" style="background-image:url('https://picsum.photos/100')")
+										.vacan-contest__txt
+											a.vacan-contest__comp-name(href="#") Название компании длинное
+											.vacan-contest__comp-city Город
+								a.vacan-contest__more(href="#") Посмотреть все конкурсы
+			.page-index__bl3
+				.container
+					.index-cat
+						.index-cat__slider
+							- for (var i=1; i<=15; i++)
+								a.index-cat__item(href="#") слайдер
+
+			.page-index__bl4
+				.container
+					.flex
+						.flex-3
+							.company-news-prev
+								.company-news-prev__h.h-l Новости компаний
+								.company-news-prev__list.flex.flex_sb
+									- for (var i=1; i<=3; i++)
+										.company-news-prev__item
+											a.company-news-prev__img(href="#" style="background-image:url('https://picsum.photos/400')")
+											a.company-news-prev__ttl.h-s(href="#") Дворник по призванию или обстоятельствам
+											.company-news-prev__prev.
+												Новая модель организационной деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации
+											a.company-news-prev__more(href="#") Читать далее
+
+						.flex-1
+							.adv-banner1
+								a.adv-banner1__item(href="#" style="background-color: pink;") реклама
+
+			.page-index__bl5
+				.container
+					.services-prev
+						.services-prev__slider
+							.services-prev__slide
+								a.services-prev__item.selected.flex(href="#")
+									.services-prev__img(style="background-image:url('https://picsum.photos/200')")
+									.services-prev__ttl Менеджер по продажам
+							- for (var i=1; i<=15; i++)
+								.services-prev__slide
+									a.services-prev__item.flex(href="#")
+										.services-prev__img(style="background-image:url('https://picsum.photos/200')")
+										.services-prev__ttl Менеджер по продажам
+
+			.page-index__bl6
+				.container
+					.flex
+						.flex-3
+							.useful-articles
+								.useful-articles__h.h-l Полезные статьи
+								.useful-articles__list.flex
+									- for (var i=1; i<=6; i++)
+										.useful-articles__item.flex
+											a.useful-articles__img(href="#" style="background-image:url('https://picsum.photos/100')")
+											.useful-articles__cnt
+												a.useful-articles__ttl.h-s(href="#") Директор магазина
+												.useful-articles__prev новая модель организационной деятельности влечет за собой процесс внедрения и модернизации
+												a.useful-articles__more(href="#") Читать далее
+						.flex-1
+							.news-prev
+								.news-prev__h.h-l Новости
+								.news-prev__list
+									- for (var i=1; i<=4; i++)
+										a.news-prev__item.flex(href="#")
+											.news-prev__img(style="background-image:url('https://picsum.photos/90')")
+											.news-prev__ttl ДВОРНИК (предпочтительно женщина)
+
+	//end workarea
