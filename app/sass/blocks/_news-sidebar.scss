@@ -1,0 +1,30 @@
+.news-sidebar{
+  margin-bottom: 20px;
+  &__ttl{
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-left: 8px;
+  }
+  &__item{
+    padding: 8px;
+    border-radius: 5px;
+    &_w{
+      background-color: $white;
+      margin-bottom: 10px;
+    }
+  }
+  &__img{
+    @include bg-img(cover);
+    display: block;
+    flex: 0 0 auto;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+  &__cnt{
+    font-size: 13px;
+    line-height: 1.2;
+  }
+  &__more{
+  }
+}

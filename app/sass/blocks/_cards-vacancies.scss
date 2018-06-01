@@ -1,0 +1,54 @@
+.cards-vacancies{
+  &__item{
+    margin-bottom: 20px;
+    border: 1px solid $gray-d;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: $white;
+    &.selected{
+      background-color: $yellow-l;
+    }
+  }
+  &__head{
+    margin-bottom: 10px;
+  }
+  &__ttl{
+    display: inline-block;
+    flex: 1 1 auto;
+  }
+  &__img{
+    @include bg-img(70%);
+    width: 100px;
+    height: 70px;
+    display: block;
+    border: 1px solid $gray-d;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+  }
+  &__prev{
+    margin-bottom: 10px;
+  }
+  &__bottom{
+    font-size: 12px;
+  }
+  &__price{
+    color: $red;
+    font-weight: $bold;
+    font-size: 20px;
+    flex: 0 0 auto;
+    margin-left: 10px;
+    line-height: 1;
+  }
+  &__h{
+    margin-bottom: 10px;
+  }
+  &__l{
+    flex: 1 1 auto;
+  }
+  &__r{
+    flex: 0 0 auto;
+    width: 150px;
+    margin-left: 20px;
+    text-align: center;
+  }
+}

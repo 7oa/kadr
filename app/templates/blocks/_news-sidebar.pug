@@ -1,0 +1,9 @@
+.news-sidebar
+    a.news-sidebar__ttl.h-s(href="#") Новости
+    .news-sidebar__list
+        - for (var i=1; i<=3; i++)
+            .news-sidebar__item.flex
+                a.news-sidebar__img(href="#" style="background-image:url('https://picsum.photos/60')")
+                .news-sidebar__cnt
+                    .news-sidebar__prev Новая модель организационной деятельности...
+                    a.news-sidebar__more(href="#") Читать далее

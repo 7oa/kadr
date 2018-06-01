@@ -1,0 +1,15 @@
+.page-topline
+    .container
+        .flex
+            .flex-3
+                .index-banners
+                    - for (var i=1; i<=3; i++)
+                        .index-banners__item
+                            a.index-banners__banner(href="#" style="background-image:url('https://picsum.photos/1000')")
+
+            .flex-1
+                .index-add-btns
+                    a.index-add-vaca.btn-link(href="#") Добавить вакансию
+                    a.index-add-rez.btn-link(href="#") Добавить резюме
+                .index-enter-btns
+                    a.index-enter.btn-link(href="#") Вход

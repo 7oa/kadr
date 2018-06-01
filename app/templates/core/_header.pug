@@ -1,3 +1,42 @@
 header.header
-    .container
+    .header-menu-wrapper
         include ../blocks/_header-menu
+    .container
+        //icons https://www.flaticon.com/packs/piofivemusic
+        .header-wrapper.flex
+            .menu-btn.js-show-menu
+            a.logo(href="/" style="background-image:url('images/logo.png')")
+            .header-search
+                form.header-search__form
+                    .header-search__row.flex
+                        .header-search__col
+                            .header-search__label Вы ищите
+                            .header-search__field
+                                select.header-search__select
+                                    option работника
+                                    option работу
+                        .header-search__col
+                            .header-search__label Тип занятости
+                            .header-search__field
+                                select.header-search__select
+                                    option основная
+                                    option подработка
+                                    option услугу
+                        .header-search__col
+                            .header-search__label Профессия
+                            .header-search__field
+                                input.header-search__input(type="text" placeholder="начните вводить слово...")
+                        .header-search__col
+                            .header-search__field
+                                button.header-search__props
+                        .header-search__col
+                            .header-search__field
+                                input.header-search__submit(type="submit" value="")
+            .header-notice
+                button.notice-button.active 12
+            .header-cab
+                a.header-cab__exit(href="#") Выход
+                a.header-cab__cab(href="#") Кабинет
+            .city-select
+                a.city-select__link(href="#") 29 регион
+                .city-select__city Архангельск

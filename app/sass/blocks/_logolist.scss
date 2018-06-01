@@ -1,0 +1,12 @@
+.logolist{
+  margin-bottom: 40px;
+  &__item{
+    @include bg-img(80%);
+    display: block;
+    flex: 0 0 auto;
+    width: 18%;
+    height: 80px;
+    border: 1px solid #9d9e9e;
+    background-color: #fff8bd;
+  }
+}

@@ -1,0 +1,31 @@
+.cards
+    .cards__h
+        .h-l Последние #{activeMenu} в Архангельске
+    .cards__list
+        .cards__item.selected.flex
+            .cards__l
+                a.cards__img(href="#" style="background-image:url('https://picsum.photos/200')")
+            .cards__c
+                a.cards__ttl.h-s(href="#") Новая модель организационной деятельности влечет
+                .cards__prev Новая модель организационной деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации
+                .cards__bottom Архангельск 11.11.2017
+            .cards__r
+                .cards__s <strong>пол:</strong> женский
+                .cards__s <strong>возраст:</strong> 20
+                .cards__zp.
+                    з/плата<br>
+                    от 220 000 руб.
+        - for (var i=1; i<=5; i++)
+            .cards__item.flex
+                .cards__l
+                    a.cards__img(href="#" style="background-image:url('https://picsum.photos/200')")
+                .cards__c
+                    a.cards__ttl.h-s(href="#") Новая модель организационной деятельности влечет
+                    .cards__prev Новая модель организационной деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации
+                    .cards__bottom Архангельск 11.11.2017
+                .cards__r
+                    .cards__s <strong>пол:</strong> женский
+                    .cards__s <strong>возраст:</strong> 20
+                    .cards__zp.
+                        з/плата<br>
+                        от 20 000 руб.

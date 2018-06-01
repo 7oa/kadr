@@ -1,0 +1,13 @@
+.caregoties{
+  margin-bottom: 40px;
+  &__h{
+    margin-bottom: 10px;
+  }
+  &__list{
+    column-count: 2;
+    column-gap: 20px;
+  }
+  &__item{
+    margin-bottom: 3px;
+  }
+}

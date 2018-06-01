@@ -1,0 +1,98 @@
+extends core/_template
+
+append sharedVars
+	- var activeMenu = 'Резюме';
+
+block title
+	title=activeMenu
+
+block content
+	.workarea
+		.page
+			include blocks/_page-topline
+			.page-body
+				.container
+					.flex
+						.sidebar-left
+							include blocks/_news-sidebar
+							include blocks/_news-sidebar-white
+						.page-center
+							.rezume-detail
+								.rezume-detail__head.flex
+									.rezume-detail__citydate.text-right.
+										Архангельск<br>
+										12.12.2017
+									.rezume-detail__img(style="background-image:url('https://picsum.photos/200')")
+									div
+										.rezume-detail__h.h-l Олегов Олег Олегович
+										.rezume-detail__params.
+											<strong>Статус:</strong> в активном поиске<br>
+											<strong>Пол:</strong> мужской<br>
+											<strong>Возраст:</strong> 34
+								.rezume-detail__prev Новая модель организационной деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации Новая модель организационной деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации
+								.rezume-detail__history
+									.rezume-detail__history-h Предыдущие места работы
+									.rezume-detail__history-row.flex
+										.rezume-detail__history-c1.text-right май 2003 - июнь 2017
+										.rezume-detail__history-c2.
+											Организация - работодатель<br>
+											Занимаемая должность
+											Ключевые обязанности на этой должности
+									.rezume-detail__history-row.flex
+										.rezume-detail__history-c1.text-right октябрь 2001 - май 2003
+										.rezume-detail__history-c2.
+											Организация - работодатель<br>
+											Занимаемая должность
+											Ключевые обязанности на этой должности
+									.rezume-detail__history-row.flex
+										.rezume-detail__history-c1.text-right август 2002
+										.rezume-detail__history-c2.
+											Организация - работодатель<br>
+											Занимаемая должность
+											Ключевые обязанности на этой должности
+
+								.rezume-detail__history
+									.rezume-detail__history-h Образование
+									.rezume-detail__history-row.flex
+										.rezume-detail__history-c1.text-right закончено 2000<br>высшее
+										.rezume-detail__history-c2.
+											Название учебного зваедения<br>
+											Факультет
+											Специальность по диплому
+
+									.rezume-detail__history-row.flex
+										.rezume-detail__history-c1.text-right закончено 2000<br>среднее специальное
+										.rezume-detail__history-c2.
+											Название учебного зваедения<br>
+											Факультет
+											Специальность по диплому
+
+								.rezume-detail__history
+									.rezume-detail__history-h Другие знания и навыки
+									.rezume-detail__history-row.flex
+										.rezume-detail__history-c1
+										.rezume-detail__history-c2.
+											Работал Ключевые обязанности Ключевые обязанности Ключевые обязанности Ключевые обязанности
+
+								.rezume-detail__history
+									.rezume-detail__history-h Дополнительные сведения
+									.rezume-detail__history-row.flex
+										.rezume-detail__history-c1.
+											женат<br>
+											дочь 13 лет<br>
+											сын 3 года<br>
+										.rezume-detail__history-c2.
+											Жена не работает Дополнительные сведения Дополнительные сведения Дополнительные сведения
+
+								.rezume-detail__history
+									.rezume-detail__history-h.color-green Пожелания соискателя
+									.rezume-detail__history-row.flex
+										.rezume-detail__history-c1.
+											Тип работы постоянная<br>
+											График работы 2/2<br>
+											Оплата сдельная<br>
+										.rezume-detail__history-c2.
+											Дополнительные сведения Дополнительные сведения Дополнительные сведения
+
+						.sidebar-right Реклама
+	//end workarea

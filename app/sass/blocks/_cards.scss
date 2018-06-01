@@ -1,0 +1,52 @@
+.cards{
+  &__item{
+    margin-bottom: 20px;
+    border: 1px solid $gray-d;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: $white;
+    &.selected{
+      background-color: $yellow-l;
+    }
+  }
+  &__img{
+    @include bg-img(cover);
+    width: 100px;
+    height: 100px;
+    display: block;
+    border-radius: 10px;
+  }
+  &__prev{
+    margin-bottom: 10px;
+  }
+  &__bottom{
+    font-size: 12px;
+  }
+  &__l{
+    flex: 0 0 auto;
+  }
+  &__h{
+    margin-bottom: 10px;
+  }
+  &__c{
+    flex: 1 1 auto;
+    padding: 0 10px;
+  }
+  &__r{
+    flex: 0 0 auto;
+    width: 150px;
+    text-align: right;
+    position: relative;
+  }
+  &__s{
+    font-size: 12px;
+  }
+  &__zp{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: $red;
+    font-size: 18px;
+    font-weight: $bold;
+  }
+}
