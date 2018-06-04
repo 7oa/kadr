@@ -6,6 +6,8 @@
 
 @import "plugins/datepicker.min";
 @import "plugins/slick";
+@import "plugins/jquery.arcticmodal-0.3";
+@import "plugins/material-icons";
 
 @import "core/base";
 @import "core/header";
@@ -20,5 +22,10 @@
 @import "blocks/cards-vacancies";
 @import "blocks/logolist";
 @import "blocks/rezume-detail";
+@import "blocks/sidebar-search";
+@import "blocks/sidebar-categories";
+@import "blocks/sidebar-hot";
+@import "blocks/vacancies-detail";
+@import "blocks/send-form";
 
 @import "pages/index";

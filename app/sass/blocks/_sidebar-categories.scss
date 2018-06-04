@@ -1,0 +1,10 @@
+.sidebar-categories{
+  margin-bottom: 20px;
+  &__h{
+    margin-bottom: 5px;
+  }
+  &__list{
+    background-color: $white;
+    padding: 10px;
+  }
+}

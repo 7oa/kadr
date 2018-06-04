@@ -1,0 +1,38 @@
+.send-form{
+  &__h{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__prev{
+    color: $green-d;
+    margin-bottom: 20px;
+  }
+  &__textarea{
+    width: 100%;
+    padding: 3px 5px;
+    height: 80px;
+    box-sizing: border-box;
+  }
+  &__input{
+    width: 100%;
+    padding: 0 5px;
+    margin-bottom: 3px;
+    box-sizing: border-box;
+  }
+  &__label{
+    margin-bottom: 5px;
+    font-size: 13px;
+  }
+  &__row{
+    margin-bottom: 10px;
+  }
+  &__submit{
+    background-color: $green-m;
+    color: $white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 0;
+    font-weight: $bold;
+  }
+}

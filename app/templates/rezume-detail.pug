@@ -14,6 +14,9 @@ block content
 				.container
 					.flex
 						.sidebar-left
+							include blocks/_sidebar-search
+							include blocks/_sidebar-categories
+							include blocks/_sidebar-hot
 							include blocks/_news-sidebar
 							include blocks/_news-sidebar-white
 						.page-center
@@ -30,6 +33,36 @@ block content
 											<strong>Пол:</strong> мужской<br>
 											<strong>Возраст:</strong> 34
 								.rezume-detail__prev Новая модель организационной деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации Новая модель организационной деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации
+								.rezume-detail__coments
+									.flex
+										.rezume-detail__coments-ttl Личные комментарии
+										a.rezume-detail__coments-link(href="#") Добавить
+								.icons-line.flex
+									button.material-btns(href="#")
+										i.material-icons favorite
+									button.material-btns(href="#")
+										i.material-icons save
+									button.material-btns(href="#")
+										i.material-icons print
+									button.material-btns(href="#")
+										i.material-icons email
+								.rezume-detail__info
+									.rezume-detail__info1.flex.flex_sb
+										.rezume-detail__info11.
+											Стаж по специальности: 10 лет<br>
+											Из них руководящий: 5 лет<br>
+											Образование: высшее техническое<br>
+										.rezume-detail__info12.
+											Водительское удостоверение категории В,С<br>
+											Знание иностранного языка: немецкий, французский<br>
+											Есть рекомендации<br>
+											Уверенный пользователь ПК
+										.rezume-detail__info-zp
+											.rezume-detail__info-zpl з/плата
+											.rezume-detail__info-zpp от 45 000
+											div месяц
+									.rezume-detail__info2.
+										<strong>Дополнительно:</strong> Целеустремленный, активный, легко обучаюсь
 								.rezume-detail__history
 									.rezume-detail__history-h Предыдущие места работы
 									.rezume-detail__history-row.flex
@@ -93,6 +126,25 @@ block content
 											Оплата сдельная<br>
 										.rezume-detail__history-c2.
 											Дополнительные сведения Дополнительные сведения Дополнительные сведения
+								div
+									button.btn-green Показать контакты
+									button.btn-green.js-open-send Предложить работу
+									button.btn-green Позвонить
+								.g-hidden
+									#send.box-modal
+										.box-modal_close.arcticmodal-close Закрыть
+										.send-form
+											.send-form__h Отправить отклик к резюме
+											.send-form__prev.h-m Олегов Олег Олегович
+											form.send-form__form
+												.send-form__row
+													.send-form__label Комментарии работодателя
+													textarea.send-form__textarea(placeholder="Напишите комментарий")
+												.send-form__row
+													.send-form__label Ссылка на вакансию
+													input.send-form__input(type="text")
+												.send-form__row
+													input.send-form__submit(type="submit" value="Отправить")
 
 						.sidebar-right Реклама
 	//end workarea

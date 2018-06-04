@@ -1,0 +1,102 @@
+extends core/_template
+
+append sharedVars
+	- var activeMenu = 'Вакансии';
+
+block title
+	title=activeMenu
+
+block content
+	.workarea
+		.page
+			include blocks/_page-topline
+			.page-body
+				.container
+					.flex
+						.sidebar-left
+							include blocks/_sidebar-search
+							include blocks/_sidebar-categories
+							include blocks/_sidebar-hot
+							include blocks/_news-sidebar
+							include blocks/_news-sidebar-white
+						.page-center
+							.vacancies-detail
+								.vacancies-detail__head.flex
+									.vacancies-detail__name
+										.vacancies-detail__h.h-l Менеджер по продажам
+										.vacancies-detail__corp OOO "Магнит"
+									.vacancies-detail__citydate.text-right.
+										Архангельск<br>
+										12.12.2017
+									.vacancies-detail__img(style="background-image:url('http://www.erogluholding.com/sites/default/files/eroglulogoyeni_0.png')")
+								.vacancies-detail__prev Новая модель организационной деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации Новая модель организационной деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации
+								.vacancies-detail__coments
+									.flex
+										.rezume-detail__coments-ttl Личные комментарии
+										a.rezume-detail__coments-link(href="#") Добавить
+								.icons-line.flex
+									button.material-btns(href="#")
+										i.material-icons favorite
+									button.material-btns(href="#")
+										i.material-icons save
+									button.material-btns(href="#")
+										i.material-icons print
+									button.material-btns(href="#")
+										i.material-icons email
+								.vacancies-detail__info
+									.vacancies-detail__info1.flex.flex_sb
+										.vacancies-detail__info11.
+											Постоянная занятость<br>
+											График сменный<br>
+											Оплата посуточно<br>
+										.vacancies-detail__info12.
+											Бесплатное притание<br>
+											Оплата мобильной связи<br>
+											Предоставляется общежитие
+										.vacancies-detail__info-zp
+											.rezume-detail__info-zpl з/плата
+											.rezume-detail__info-zpp от 45 000
+											div сутки
+									.vacancies-detail__info2.
+										<strong>Дополнительно:</strong> Новая модель организационной деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации
+								.vacancies-detail__bl
+									.vacancies-detail__bl-h Обязанности
+									.vacancies-detail__bl-row Новая модель организационной деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации Новая модель организационной деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации
+								.vacancies-detail__bl
+									.vacancies-detail__bl-h Требования к кандидатам
+									.vacancies-detail__bl-row.
+										Новая модель организационной деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации Новая модель организационной деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации
+									.vacancies-detail__bl-row.
+										<strong>Образование:</strong> высшее<br>
+										<strong>Стаж работы:</strong> от 5 лет<br>
+										Новая модель организационной деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации Новая модель организационной деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации
+
+								div
+									button.btn-green Показать контакты
+									button.btn-green.js-open-send Отправить резюме
+									button.btn-green Позвонить
+								.g-hidden
+									#send.box-modal
+										.box-modal_close.arcticmodal-close Закрыть
+										.send-form
+											.send-form__h Отправить отклик к вакансии
+											.send-form__prev.h-m Название
+											form.send-form__form
+												.send-form__row
+													.send-form__label Комментарии соискателя
+													textarea.send-form__textarea(placeholder="Напишите комментарий")
+												.send-form__row
+													.send-form__label Ссылка на резюме
+													input.send-form__input(type="text")
+												.send-form__row
+													.send-form__label Ссылка на файл/портфолио
+													div
+														input.send-form__input(type="text")
+													div
+														input.send-form__input(type="text")
+													div
+														input.send-form__input(type="text")
+												.send-form__row
+													input.send-form__submit(type="submit" value="Отправить")
+						.sidebar-right Реклама
+	//end workarea

@@ -1,0 +1,15 @@
+.sidebar-hot{
+  margin-bottom: 20px;
+  background-color: $yellow-l;
+  padding: 10px;
+  &__h{
+    margin-bottom: 10px;
+  }
+  &__ttl{
+    text-transform: uppercase;
+    font-weight: $bold;
+  }
+  &__item{
+    margin-bottom: 10px;
+  }
+}

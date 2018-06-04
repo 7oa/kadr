@@ -30,4 +30,8 @@ $(document).ready(function() {
             }, 200);
         }
     });
+    $('.js-open-send').click(function(){
+        $('#send').arcticmodal();
+    });
+
 });
