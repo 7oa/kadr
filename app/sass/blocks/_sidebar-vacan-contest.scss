@@ -1,0 +1,29 @@
+.sidebar-vacan-contest{
+  margin-bottom: 20px;
+  &__h{
+    color: $green-d;
+    margin-bottom: 5px;
+  }
+  &__ttl{
+    color: $black;
+    font-weight: $bold;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+  &__body{
+    margin-bottom: 5px;
+  }
+  &__img{
+    @include bg-img(cover);
+    width: 70px;
+    height: 60px;
+    margin-right: 10px;
+    flex: 0 0 auto;
+    border-radius: 5px;
+  }
+  &__more{
+    color: $gray-d;
+    font-weight: $bold;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,13 @@
+.sidebar-last-rezume{
+  margin-bottom: 20px;
+  &__h{
+    margin-bottom: 5px;
+  }
+  &__item{
+    margin-bottom: 5px;
+  }
+  &__ttl{
+    text-transform: uppercase;
+    font-weight: $bold;
+  }
+}

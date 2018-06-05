@@ -1,0 +1,37 @@
+extends core/_template
+
+append sharedVars
+	- var activeMenu = '';
+	- var ttl = 'Новости';
+
+block title
+	title=ttl
+
+block content
+	.workarea
+		.page
+			.page-body
+				.container
+					.page-wrapper.flex
+						.sidebar-left
+							include blocks/_sidebar-search
+							include blocks/_sidebar-last-rezume
+							include blocks/_sidebar-categories
+							include blocks/_sidebar-vacan-contest
+							include blocks/_news-sidebar-white
+
+						.page-center
+							.useful-info.flex
+								.useful-info__ttl.h-l Полезная информация
+								a.useful-info__link(href="#") Работодателю
+								a.useful-info__link(href="#") Соискателю
+							.news-list
+								.news-list__h.h-l Последние статьи
+								.news-list__list
+									- for (var i=1; i<=6; i++)
+										include blocks/_news-item
+
+						.sidebar-right Реклама
+					include blocks/_services-prev
+
+	//end workarea

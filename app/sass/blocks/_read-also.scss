@@ -1,0 +1,18 @@
+.read-also{
+  &__h{
+    color: $green-d;
+    margin-bottom: 10px;
+  }
+  &__item{
+    width: 49%;
+    flex: 0 0 auto;
+  }
+  &__img{
+    display: block;
+    @include bg-img(cover);
+    width: 100px;
+    height: 60px;
+    margin-right: 10px;
+    flex: 0 0 auto;
+  }
+}

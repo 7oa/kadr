@@ -1,0 +1,11 @@
+.services-prev
+    .services-prev__slider
+        .services-prev__slide
+            a.services-prev__item.selected.flex(href="#")
+                .services-prev__img(style="background-image:url('https://picsum.photos/200')")
+                .services-prev__ttl Менеджер по продажам
+        - for (var i=1; i<=15; i++)
+            .services-prev__slide
+                a.services-prev__item.flex(href="#")
+                    .services-prev__img(style="background-image:url('https://picsum.photos/200')")
+                    .services-prev__ttl Менеджер по продажам

@@ -1,0 +1,15 @@
+.news-item{
+  margin-bottom: 20px;
+  &__img{
+    flex: 0 0 auto;
+    display: block;
+    @include bg-img(cover);
+    margin-left: 20px;
+    width: 120px;
+    height: 100px;
+    border-radius: 10px;
+  }
+  &__date{
+    font-size: 12px;
+  }
+}

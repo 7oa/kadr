@@ -1,0 +1,72 @@
+extends core/_template
+
+append sharedVars
+	- var activeMenu = '';
+
+block title
+	title=activeMenu
+
+block content
+	.workarea
+		.page
+			include blocks/_page-topline
+			.page-body
+				.container
+					.page-wrapper.flex
+						.sidebar-left
+							include blocks/_sidebar-search
+							include blocks/_sidebar-categories
+							include blocks/_sidebar-hot
+							include blocks/_news-sidebar
+							include blocks/_news-sidebar-white
+						.page-center
+							.corp-detail
+								.corp-detail__head.flex
+									.corp-detail__img(style="background-image:url('http://www.erogluholding.com/sites/default/files/eroglulogoyeni_0.png')")
+										.corp-detail__r ®
+									.corp-detail__name
+										.corp-detail__h.h-l Название организации
+										.corp-detail__contacts.
+											Архангельск, ул. Ленина, д. 3, оф. 404<br>
+											Тел. 8 909 9990000
+									.corp-detail__exp с нами<br>2 года<br>10 месяцев
+								.corp-detail__text
+									h3 Специалист по кадрам
+									p Фамилия имя отчество
+									h3 Вид деятельности
+									p Новая модель организационной деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации
+									h3 Дополнительные условия
+									p Новая модель организационной деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации
+									p
+										strong Сайт организации
+										|
+										|
+										a(href="#" target="_black") www.corp.ru
+								.corp-detail__gallery
+									.corp-detail__gallery-h.h-l Фотогаллерея
+									.corp-detail__gallery-list.flex
+										- for (var i=1; i<=4; i++)
+											.corp-detail__gallery-item(style="background-image:url('https://picsum.photos/135')")
+								.corp-detail__vacancies
+									.corp-detail__vacancies.h-l Вакансии в Архангельске
+									.cards-vacancies__item.selected.flex
+										.cards-vacancies__l
+											.cards-vacancies__head.flex.flex_sb
+												a.cards-vacancies__ttl.h-s(href="#") Новая модель организационной
+												.cards-vacancies__price 120 000 руб.
+											.cards-vacancies__prev Новая модель организационной деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации
+											.cards-vacancies__bottom Архангельск 11.11.2017
+
+										.cards-vacancies__r
+											a.cards-vacancies__img(href="#" style="background-image:url('http://www.idalgo.net/images/logo/logo-vedtranzit-b.png')")
+											a.cards-vacancies__company(href="#") ООО "БалтТехМаш"
+									include blocks/_vacancies-item
+
+								.corp-detail__vacancies
+									.corp-detail__vacancies.h-l Вакансии в Вологде
+									include blocks/_vacancies-item
+
+
+						.sidebar-right Реклама
+					include blocks/_services-prev
+	//end workarea

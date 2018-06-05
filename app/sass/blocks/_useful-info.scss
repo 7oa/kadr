@@ -1,0 +1,11 @@
+.useful-info{
+  margin-bottom: 20px;
+  align-items: center;
+  &__ttl{
+    margin-right: 10px;
+  }
+  &__link{
+    margin-right: 10px;
+    font-weight: $bold;
+  }
+}
