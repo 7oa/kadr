@@ -33,5 +33,17 @@ $(document).ready(function() {
     $('.js-open-send').click(function(){
         $('#send').arcticmodal();
     });
+    $('.js-enter').click(function(){
+        $('#enter').arcticmodal();
+        $('.form-reg').hide();
+        $('.form-enter').show();
+    });
+    $('.js-registration').click(function(){
+        var reg = $(this).data('reg');
+        var regClass = '.form-'+reg;
+        $('.form-enter').hide();
+        $(regClass).fadeIn();
+    });
+
 
 });

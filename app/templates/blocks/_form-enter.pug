@@ -1,0 +1,73 @@
+.g-hidden
+    #enter.box-modal.box-modal__sm
+        .box-modal_close.arcticmodal-close Закрыть
+        .form-enter
+            .form-enter__h.h-m Вход в личный кабинет
+            form.form-enter__form
+                .form-enter__row
+                    .form-enter__label Логин
+                    input.form-enter__input(type="text")
+                .form-enter__row
+                    .form-enter__label Пароль
+                    input.form-enter__input(type="password")
+                .form-enter__row
+                    input.form-enter__submit(type="submit" value="Войти")
+            .form-enter__reg
+                .form-enter__reg-h.h-s Регистрация
+                button.form-enter__reg-btn.js-registration(data-reg="reg-s") Соискатель
+                button.form-enter__reg-btn.js-registration(data-reg="reg-r") Работодатель
+        .form-reg.form-reg-s
+            .form-enter__h.h-m Регистрация соискателя
+            form.form-enter__form
+                .form-enter__row
+                    .form-enter__label Пол
+                    input.form-enter__input(type="text")
+                .form-enter__row
+                    .form-enter__label Год рождения
+                    input.form-enter__input(type="date")
+                .form-enter__row
+                    .form-enter__label Имя
+                    input.form-enter__input(type="text")
+                .form-enter__row
+                    .form-enter__label Город
+                    input.form-enter__input(type="text")
+                .form-enter__row
+                    .form-enter__label E-mail
+                    input.form-enter__input(type="email")
+                .form-enter__row
+                    .form-enter__label Пароль
+                    input.form-enter__input(type="password")
+                .form-enter__row
+                    .form-enter__label Повторить пароль
+                    input.form-enter__input(type="password")
+                .form-enter__row
+                    input.form-enter__checkbox(type="checkbox" id="checkbox-reg-s")
+                    label.form-enter__checkbox-label(for="checkbox-reg-s") <a href="#" target="_blank">Пользовательское соглашение</a> и соглашение на обработку персональных данных
+                .form-enter__row
+                    input.form-enter__submit(type="submit" value="Регистрация")
+        .form-reg.form-reg-r
+            .form-enter__h.h-m Регистрация работодателя
+            form.form-enter__form
+                .form-enter__row
+                    .form-enter__label Форма собственности
+                    input.form-enter__input(type="text")
+                .form-enter__row
+                    .form-enter__label Название организации
+                    input.form-enter__input(type="text")
+                .form-enter__row
+                    .form-enter__label Город
+                    input.form-enter__input(type="text")
+                .form-enter__row
+                    .form-enter__label E-mail
+                    input.form-enter__input(type="email")
+                .form-enter__row
+                    .form-enter__label Пароль
+                    input.form-enter__input(type="password")
+                .form-enter__row
+                    .form-enter__label Повторить пароль
+                    input.form-enter__input(type="password")
+                .form-enter__row
+                    input.form-enter__checkbox(type="checkbox" id="checkbox-reg-r")
+                    label.form-enter__checkbox-label(for="checkbox-reg-r") <a href="#" target="_blank">Пользовательское соглашение</a> и соглашение на обработку персональных данных
+                .form-enter__row
+                    input.form-enter__submit(type="submit" value="Регистрация")
