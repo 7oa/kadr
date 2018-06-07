@@ -1,0 +1,31 @@
+.mess{
+  &__cnt{
+    color: $white;
+    padding: 0 10px;
+    line-height: 30px;
+    text-align: center;
+    flex: 0 0 auto;
+  }
+  &__item{
+    margin-bottom: 5px;
+    &_green{
+      .mess__cnt{
+        background-color: $green-d;
+      }
+    }
+    &_yellow{
+      .mess__cnt{
+        background-color: $yellow-d;
+      }
+    }
+
+  }
+  &__btn{
+    text-align: center;
+    color: $green-d;
+    font-weight: $bold;
+    background-color: $green-l;
+    flex: 1 1 auto;
+    line-height: 30px;
+  }
+}

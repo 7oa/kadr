@@ -1,0 +1,35 @@
+extends core/_template
+
+append sharedVars
+	- var activeMenu = '';
+	- var pageTtl = 'Личный кабинет работодателя';
+
+block title
+	title=pageTtl
+
+block content
+	.workarea
+		.page
+			.page-body
+				.container
+					.page-wrapper.flex
+						.sidebar-left
+							include blocks/_sidebar-search
+							include blocks/_sidebar-categories
+							include blocks/_sidebar-hot
+							include blocks/_news-sidebar
+							include blocks/_news-sidebar-white
+						.page-center
+							.lk
+								.lk-tabs
+									button.js-tab.lk-tabs__item.active(data-tab="profile") Профиль
+									button.js-tab.lk-tabs__item(data-tab="journal") Журнал
+									button.js-tab.lk-tabs__item(data-tab="service") Сервис
+								.lk-body
+									include blocks/_tab-profile
+									include blocks/_tab-journal
+									include blocks/_tab-service
+
+
+						.sidebar-right Реклама
+	//end workarea

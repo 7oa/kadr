@@ -19,3 +19,54 @@ button{
   font-weight: $bold;
   color: $white;
 }
+.btn-green2{
+  background-color: $green-m;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-weight: $bold;
+  color: $white;
+}
+.profile-btn{
+  background-color: $green-d;
+  padding: 7px 15px;
+  text-transform: uppercase;
+  font-weight: $bold;
+  color: $white;
+}
+.icon-btn{
+  background-color: $green-d;
+  color: $white;
+  &__off{
+    background-color: $red;
+  }
+}
+.btn-yellow{
+  background-color: $yellow-d;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-weight: $bold;
+  color: $green-d;
+}
+.span-green{
+  background-color: $green-m;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-weight: $bold;
+  color: $white;
+}
+.span-yellow{
+  background-color: $yellow-d;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-weight: $bold;
+  color: $green-d;
+}
+.service-prof{
+  background-color: $yellow-l;
+  color: $green-d;
+  width: 100%;
+  line-height: 30px;
+  font-weight: $bold;
+  text-transform: uppercase;
+}

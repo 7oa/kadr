@@ -1,0 +1,55 @@
+.filter-panel
+    .container
+        form.filter-panel__form
+            .filter-panel__wrapper.flex.flex_sb
+                .filter-panel__r1
+                    .filter-panel__row
+                        label.filter-panel__label Профессия
+                        input.filter-panel__input(type="text")
+                    .filter-panel__row
+                        label.filter-panel__label Город
+                        input.filter-panel__input(type="text")
+                    .filter-panel__row
+                        label.filter-panel__label Период размещения c
+                        input.filter-panel__input(type="date")
+                    .filter-panel__row
+                        label.filter-panel__label Сортировать по
+                        br
+                        input.filter-panel__checkbox(type="radio" name="filter-sort" id="sort-date")
+                        label.filter-panel__checkbox-label(for="sort-date") дате
+                        input.filter-panel__checkbox(type="radio" name="filter-sort" id="sort-zp")
+                        label.filter-panel__checkbox-label(for="sort-zp") уровню з/платы
+                .filter-panel__r2
+                    .filter-panel__row
+                        label.filter-panel__label Тип занятости
+                        input.filter-panel__input(type="text")
+                    .filter-panel__row
+                        label.filter-panel__label График работы
+                        input.filter-panel__input(type="text")
+                    .filter-panel__row
+                        label.filter-panel__label Опыт работы от
+                        input.filter-panel__input(type="text")
+                    .filter-panel__row
+                        input.filter-panel__checkbox(type="radio" name="filter-op" id="op1")
+                        label.filter-panel__checkbox-label(for="op1") Без опыта работы
+                        br
+                        input.filter-panel__checkbox(type="radio" name="filter-op" id="op2")
+                        label.filter-panel__checkbox-label(for="op2") Руководящий опыт
+                .filter-panel__r3
+                    .filter-panel__row
+                        label.filter-panel__label Заработная плата от
+                        input.filter-panel__input(type="text")
+                    .filter-panel__row
+                        label.filter-panel__label Платежный период
+                        input.filter-panel__input(type="text")
+                    .filter-panel__row
+                        label.filter-panel__label Форма оплаты
+                        input.filter-panel__input(type="text")
+                    .filter-panel__row
+                        input.filter-panel__checkbox(type="radio" name="filter-vr" id="op-v")
+                        label.filter-panel__checkbox-label(for="op-v") Вакансию
+                        br
+                        input.filter-panel__checkbox(type="radio" name="filter-vr" id="op-r")
+                        label.filter-panel__checkbox-label(for="op-r") Резюме
+            .filter-panel__wrapper
+                input.filter-panel__submit(type="submit" value="Поиск")

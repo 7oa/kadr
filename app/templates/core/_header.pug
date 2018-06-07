@@ -28,7 +28,7 @@ header.header
                                 input.header-search__input(type="text" placeholder="начните вводить слово...")
                         .header-search__col
                             .header-search__field
-                                button.header-search__props
+                                button.header-search__props.js-filter(type="button")
                         .header-search__col
                             .header-search__field
                                 input.header-search__submit(type="submit" value="")
@@ -40,3 +40,4 @@ header.header
             .city-select
                 a.city-select__link(href="#") 29 регион
                 .city-select__city Архангельск
+    include ../blocks/_filter-panel

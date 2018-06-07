@@ -1,0 +1,34 @@
+.filter-panel{
+  display: none;
+  background-color: $green-m;
+  position: absolute;
+  top: 80px;
+  z-index: 9;
+  width: 100%;
+  padding: 20px 0;
+  &__row{
+    margin-bottom: 5px;
+  }
+  &__input{
+    width: 100%;
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+  &__submit{
+    background-repeat: no-repeat;
+    background-size: 17px;
+    background-position: 7px center;
+    background-image: url(images/musica-searcher.svg);
+    background-color: $green-d;
+    border: none;
+    height: 27px;
+    cursor: pointer;
+    display: block;
+    float: right;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: $bold;
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+}

@@ -1,0 +1,203 @@
+.tab{
+  display: none;
+  padding-top: 20px;
+  &:first-of-type{
+    display: block;
+  }
+}
+.tab-journal-f{
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 2px solid $green-d;
+  &:last-of-type{
+    border-bottom: none;
+  }
+}
+.lk-tabs{
+  &__item{
+    border: 1px solid $gray-d;
+    margin-right: 5px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-weight: $bold;
+    &.active{
+      color: $green-d;
+    }
+  }
+}
+.tab-profile{
+  &__cnt{
+    margin-bottom: 20px;
+  }
+  &__l{
+    flex: 0 0 auto;
+    margin-right: 20px;
+  }
+  &__img{
+    @include bg-img(70%);
+    border-radius: 20px;
+    border: 1px solid $gray-d;
+    width: 130px;
+    height: 80px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  &__rp{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    color: $green-d;
+  }
+  &__r-prev{
+    margin-bottom: 10px;
+  }
+  &__contacts{
+    margin-bottom: 10px;
+  }
+  &__prev-bl{
+    margin-bottom: 10px;
+  }
+  &__btns{
+    a{
+      margin-right: 10px;
+    }
+  }
+  &__portfolio{
+    margin-bottom: 20px;
+  }
+  &__portfolio-head{
+    align-items: center;
+  }
+  &__portfolio-h{
+    margin-right: 10px;
+  }
+}
+.tab-journal-head{
+  margin-bottom: 20px;
+  &__inf{
+    flex: 1 1 auto;
+  }
+  &__btns{
+    flex: 0 0 auto;
+    margin-left: 20px;
+    text-align: right;
+    a{
+      margin-bottom: 5px;
+    }
+  }
+}
+.journal-list{
+  &__item{
+    margin-bottom: 20px;
+  }
+  &__obj{
+    flex: 1 1 auto;
+  }
+  &__btns{
+    width: 24px;
+    flex: 0 0 auto;
+    margin-left: 5px;
+    button{
+      margin-bottom: 3px;
+    }
+  }
+  &__item-edit{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    a{
+      margin-left: 5px;
+    }
+  }
+}
+.ss-bl{
+  margin-bottom: 20px;
+  &__h{
+    margin-bottom: 10px;
+  }
+}
+.ss-item{
+  margin-bottom: 5px;
+  &__ttl{
+    flex: 1 1 auto;
+    background-color: $gray-l;
+    line-height: 28px;
+    padding: 0 5px;
+  }
+}
+.tab-service-f{
+  &__head{
+    margin-bottom: 20px;
+  }
+}
+.tab-service-c1{
+  width: 20px;
+  flex: 0 0 auto;
+  margin-right: 5px;
+  align-self: center;
+}
+.tab-service-c2{
+  flex: 1 1 auto;
+}
+.tab-service-c3{
+  width: 85px;
+  flex: 0 0 auto;
+  margin-left: 5px;
+}
+.tab-service-r{
+  margin-bottom: 5px;
+  display: flex;
+  align-items: stretch;
+}
+.tab-service-obj{
+  background-color: $gray-l;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $black;
+  height: 100%;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  &_head{
+    font-weight: $bold;
+    color: $green-d;
+    text-transform: uppercase;
+  }
+}
+.tab-service-ss{
+  text-align: center;
+  background-color: $gray-l;
+  color: $white;
+  padding: 5px 0;
+  box-sizing: border-box;
+  min-height: 48px;
+  &.green{
+    background-color: $green-d;
+  }
+  &.red{
+    background-color: $red;
+  }
+  span{
+    text-transform: uppercase;
+    font-weight: $bold;
+  }
+}
+.tab-service-prof{
+  &__l{
+    width: 300px;
+    flex: 0 0 auto;
+    margin-right: 20px;
+  }
+  &__descr{
+    font-size: 12px;
+    line-height: 1;
+  }
+  &__act{
+    color: $green-d;
+    font-weight: $bold;
+    text-transform: uppercase;
+  }
+}
