@@ -53,8 +53,32 @@
                     .tab-service-ss.red
                         span Первый
                         p до 23.04
+
+    .tab-service-cnt
+        .flex
+            .tab-service-cnt__l
+                .tab-service-cnt__row.flex
+                    button.tab-service-cnt__btn(type="button") Выделить цветом
+                    .tab-service-cnt__price 250
+                .tab-service-cnt__row.flex
+                    button.tab-service-cnt__btn(type="button") В раздел срочно
+                    .tab-service-cnt__price 100
+                .tab-service-cnt__row.flex
+                    button.tab-service-cnt__btn(type="button") Первый в рубрике
+                    .tab-service-cnt__price 200
+            .tab-service-cnt__r
+                div Выбрано вакансий: 2
+                .ts-inp.flex.flex_sb
+                    .ts-label Срок заказа в неделях
+                    input.ts-input(type="number" min="0" value="1")
+                div
+                    p Выбраны услуги
+                    p Выделение цветом 500 руб
+                    p Первый в рубрике 400 руб
+                div
+                    strong к оплате 3 400 руб
     .tab-service-f
-        .h-m Профиль
+        .tab-service-f__h.h-m Профиль
         .tab-service-prof.flex
             .tab-service-prof__l
                 button.service-prof Ведущий работодатель
@@ -63,12 +87,78 @@
                     p Интерактивная ссылка на профиль работодателя
                 .tab-service-prof__act Услуга активан до 23.04.2018
             .tab-service-prof__r
-                div
+                .tab-service-prof__p
                     strong 300 руб.
                     |
                     |
                     span одна неделя
-                div Срок заказа в неделях
-                input(type="number" min="0" value="1")
+                .ts-inp.flex.flex_sb
+                    .ts-label Срок заказа в неделях
+                    input.ts-input(type="number" min="0" value="1")
                 div
                     strong к оплате 900 руб.
+
+        .tab-service-prof.flex
+            .tab-service-prof__l
+                button.service-prof Рекламный модуль
+                .tab-service-prof__descr
+                    p Размещение одного рекламного модуля в правой колонке, отображается на всех страницах сайта.
+                    p Трансляция рекламы после модерации.
+                    p Стоимость услуги за 50% ротации
+                    br
+                    a(href="#") Загрузить модуль
+                    br
+                    br
+                    a(href="#") У меня нет готового модуля
+                    p Изготовление модуля от 500 руб.
+            .tab-service-prof__r
+                .tab-service-prof__p
+                    strong 1500 руб.
+                    |
+                    |
+                    span одна неделя 200x100px
+
+                .ts-inp.flex.flex_sb
+                    .ts-label Ширина 200 высота
+                    input.ts-input(type="number" min="0" value="100")
+                .ts-inp.flex.flex_sb
+                    .ts-label Срок заказа в неделях
+                    input.ts-input(type="number" min="0" value="1")
+                div
+                    strong к оплате 900 руб.
+
+        .tab-service-prof.flex
+            .tab-service-prof__l
+                button.service-prof Рекламная статья
+                .tab-service-prof__descr
+                    p Статья в рубрику "Новости компании"
+                    p Удобный инструмент для массового привлечения внимания к новостям компании и перспективным рабочим местам.
+            .tab-service-prof__r
+                .tab-service-prof__p
+                    strong 500 руб.
+                    |
+                    |
+                    span одна публикация
+                .ts-inp.flex.flex_sb
+                    .ts-label Кол-во публикаций
+                    input.ts-input(type="number" min="0" value="1")
+                a(href="#") Отправить материал для публикации
+
+    .basket
+        .basket__wrapper.flex
+            .basket__c1
+                .basket__cart(style="background-image:url('images/shopping-cart-of-checkered-design.svg')")
+            .basket__c2
+                .basket__sel
+                    p Выбраны услуги
+                    p 2 Выделение цветом 500 руб.
+                    p 2 Первый в рубрике 400 руб.
+                    p 2 Ведущий работодатель 600 руб.
+                    p 2 Рекламный модуль 2940 руб.
+                .basket__sum к оплате 7 900 руб
+            .basket__c3
+                .basket__promo
+                    .basket__promo-label Промокод
+                    input.basket__promo-input(type="text")
+                .basket__pay-btn
+                    input.basket__pay-submit(type="submit" value="Оплатить")

@@ -129,6 +129,10 @@
   }
 }
 .tab-service-f{
+  margin-bottom: 20px;
+  &__h{
+    margin-bottom: 10px;
+  }
   &__head{
     margin-bottom: 20px;
   }
@@ -186,6 +190,7 @@
   }
 }
 .tab-service-prof{
+  margin-bottom: 20px;
   &__l{
     width: 300px;
     flex: 0 0 auto;
@@ -194,10 +199,60 @@
   &__descr{
     font-size: 12px;
     line-height: 1;
+    margin-bottom: 10px;
+  }
+  &__r{
+    flex: 1 1 auto;
+  }
+  &__p{
+    margin-bottom: 5px;
   }
   &__act{
     color: $green-d;
     font-weight: $bold;
     text-transform: uppercase;
+  }
+  .service-prof{
+    margin-bottom: 10px;
+  }
+}
+.ts-inp{
+  margin-bottom: 5px;
+}
+.ts-label{
+  margin-right: 5px;
+  flex: 1 1 auto
+}
+.ts-input{
+  width: 60px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  flex:  0 0 auto;
+}
+.tab-service-cnt{
+  &__r{
+    flex: 1 1 auto;
+  }
+  &__l{
+    width: 300px;
+    flex: 0 0 auto;
+    margin-right: 20px;
+  }
+  &__row{
+    margin-bottom: 5px;
+  }
+  &__btn{
+    width: 250px;
+    flex: 0 0 auto;
+    margin-right: 10px;
+    background-color: $green-d;
+    color: $yellow-d;
+    text-transform: uppercase;
+    font-weight: $bold;
+    line-height: 30px;
+  }
+  &__price{
+    font-weight: $bold;
+    font-size: 18px;
   }
 }

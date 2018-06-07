@@ -1,0 +1,38 @@
+.basket{
+  border-top: 2px solid $green-d;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  &__cart{
+    @include bg-img(contain);
+    width: 100px;
+    height: 100px;
+    flex: 0 0 auto;
+  }
+  &__sum{
+    font-weight: $bold;
+    font-size: 18px;
+  }
+  &__c1{
+    flex: 0 0 auto;
+    margin-right: 20px;
+  }
+  &__c2{
+    flex: 1 1 auto;
+  }
+  &__c3{
+    flex: 0 0 auto;
+    margin-left: 20px;
+  }
+  &__promo{
+    margin-bottom: 5px;
+  }
+  &__pay-submit{
+    background-color: $green-d;
+    text-transform: uppercase;
+    width: 100%;
+    color: $white;
+    border: none;
+    font-weight: $bold;
+    line-height: 30px;
+  }
+}

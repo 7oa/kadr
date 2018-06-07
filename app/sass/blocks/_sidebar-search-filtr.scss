@@ -1,0 +1,30 @@
+.sidebar-search-filtr{
+  margin-bottom: 20px;
+  &__bl{
+    margin-bottom: 10px;
+  }
+  &__s{
+    color: $green-d;
+    font-weight: $bold;
+  }
+  &__showall{
+    font-weight: $bold;
+  }
+  &__small{
+    font-size: 14px;
+    line-height: 1.2;
+    margin-bottom: 5px;
+  }
+  &__col{
+    margin-right: 10px;
+  }
+  &__label-zp{
+    margin-right: 5px;
+  }
+  &__input-zp{
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 5px;
+    width: 80px;
+  }
+}

@@ -1,0 +1,41 @@
+.sidebar-search-filtr
+    .sidebar-search-filtr__bl
+        .h-s вы искали
+        .sidebar-search-filtr__s "повар"
+        .sidebar-search-filtr__small найдено 23 совпадения в Архангельске
+        .sidebar-search-filtr__small 1230 по России
+        a.sidebar-search-filtr__showall(href="#") показать все
+
+    .sidebar-search-filtr__bl
+        .h-s Сортировать по
+        div
+            input.sidebar-search-filtr__checkbox(type="radio" name="filter-sort2" id="sort2-date")
+            label.sidebar-search-filtr__checkbox-label(for="sort2-date") дате
+            br
+            input.sidebar-search-filtr__checkbox(type="radio" name="filter-sort2" id="sort2-zp")
+            label.sidebar-search-filtr__checkbox-label(for="sort2-zp") уровню з/платы
+
+    .sidebar-search-filtr__bl
+        .h-s З/плата
+        .sidebar-search-filtr__row.flex
+            .sidebar-search-filtr__col.flex
+                label.sidebar-search-filtr__label-zp От
+                input.sidebar-search-filtr__input-zp(type="number")
+            .sidebar-search-filtr__col.flex
+                label.sidebar-search-filtr__label-zp До
+                input.sidebar-search-filtr__input-zp(type="number")
+
+    .sidebar-search-filtr__bl
+        .h-s Тип занятости
+        div
+            input.filter-panel__checkbox(type="checkbox" id="sort3-1")
+            label.filter-panel__checkbox-label(for="sort3-1") постоянная
+            br
+            input.filter-panel__checkbox(type="checkbox" id="sort3-2")
+            label.filter-panel__checkbox-label(for="sort3-2") временная
+            br
+            input.filter-panel__checkbox(type="checkbox" id="sort3-3")
+            label.filter-panel__checkbox-label(for="sort3-3") вахта
+            br
+            input.filter-panel__checkbox(type="checkbox" id="sort3-4")
+            label.filter-panel__checkbox-label(for="sort3-4") почасовая

@@ -1,0 +1,26 @@
+extends core/_template
+
+append sharedVars
+	- var activeMenu = 'Резюме';
+
+block title
+	title=activeMenu
+
+block content
+	.workarea
+		.page
+			include blocks/_page-topline
+			.page-body
+				.container
+					.page-wrapper.flex
+						.sidebar-left
+							include blocks/_sidebar-search-filtr
+							include blocks/_news-sidebar
+							include blocks/_news-sidebar-white
+						.page-center
+							include blocks/_caregoties
+							include blocks/_cards
+
+						.sidebar-right Реклама
+					include blocks/_services-prev
+	//end workarea

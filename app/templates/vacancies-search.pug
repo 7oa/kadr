@@ -1,0 +1,32 @@
+extends core/_template
+
+append sharedVars
+	- var activeMenu = 'Вакансии';
+
+block title
+	title=activeMenu
+
+block content
+	.workarea
+		.page
+			include blocks/_page-topline
+			.page-body
+				.container
+					.page-wrapper.flex
+						.sidebar-left
+							include blocks/_sidebar-search-filtr
+							include blocks/_news-sidebar
+							include blocks/_news-sidebar-white
+						.page-center
+							include blocks/_caregoties
+
+							.logolist.flex.flex_sb
+								- for (var i=1; i<=5; i++)
+									a.logolist__item(href="#" style="background-image:url('http://www.erogluholding.com/sites/default/files/eroglulogoyeni_0.png')")
+
+							include blocks/_cards-vacancies
+
+						.sidebar-right Реклама
+					include blocks/_services-prev
+
+	//end workarea
