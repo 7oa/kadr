@@ -21,8 +21,12 @@
                         label.filter-panel__checkbox-label(for="sort-zp") уровню з/платы
                 .filter-panel__r2
                     .filter-panel__row
-                        label.filter-panel__label Тип занятости
-                        input.filter-panel__input(type="text")
+                        label.filter-panel__label Тип работы
+                        select.filter-panel__select
+                            option полная занятость
+                            option частичная занятость
+                            option вахта
+                            option удаленно
                     .filter-panel__row
                         label.filter-panel__label График работы
                         input.filter-panel__input(type="text")
@@ -40,11 +44,21 @@
                         label.filter-panel__label Заработная плата от
                         input.filter-panel__input(type="text")
                     .filter-panel__row
-                        label.filter-panel__label Платежный период
-                        input.filter-panel__input(type="text")
+                        label.filter-panel__label Период оплаты
+                        select.filter-panel__select
+                            option час
+                            option день
+                            option неделя
+                            option месяц
                     .filter-panel__row
                         label.filter-panel__label Форма оплаты
-                        input.filter-panel__input(type="text")
+                        select.filter-panel__select
+                            option оклад
+                            option оклад+%
+                            option сдельная
+                            option оклад+премия
+                            option оклад+премия+%
+                            option почасовая
                     .filter-panel__row
                         input.filter-panel__checkbox(type="radio" name="filter-vr" id="op-v")
                         label.filter-panel__checkbox-label(for="op-v") Вакансию

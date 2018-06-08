@@ -26,16 +26,19 @@
                 input.sidebar-search-filtr__input-zp(type="number")
 
     .sidebar-search-filtr__bl
-        .h-s Тип занятости
+        .h-s Тип работы
         div
-            input.filter-panel__checkbox(type="checkbox" id="sort3-1")
-            label.filter-panel__checkbox-label(for="sort3-1") постоянная
+            input.sidebar-search-filtr__checkbox(type="checkbox" id="sort3-1")
+            label.sidebar-search-filtr__checkbox-label(for="sort3-1") постоянная
             br
-            input.filter-panel__checkbox(type="checkbox" id="sort3-2")
-            label.filter-panel__checkbox-label(for="sort3-2") временная
+            input.sidebar-search-filtr__checkbox(type="checkbox" id="sort3-2")
+            label.sidebar-search-filtr__checkbox-label(for="sort3-2") временная
             br
-            input.filter-panel__checkbox(type="checkbox" id="sort3-3")
-            label.filter-panel__checkbox-label(for="sort3-3") вахта
+            input.sidebar-search-filtr__checkbox(type="checkbox" id="sort3-3")
+            label.sidebar-search-filtr__checkbox-label(for="sort3-3") вахта
             br
-            input.filter-panel__checkbox(type="checkbox" id="sort3-4")
-            label.filter-panel__checkbox-label(for="sort3-4") почасовая
+            input.sidebar-search-filtr__checkbox(type="checkbox" id="sort3-4")
+            label.sidebar-search-filtr__checkbox-label(for="sort3-4") почасовая
+    .sidebar-search-filtr__bl
+        input.sidebar-search-filtr__submit(type="submit" value="Применить")
+        input.sidebar-search-filtr__submit(type="reset" value="Сбросить")

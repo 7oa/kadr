@@ -1,0 +1,181 @@
+.tab.tab-service
+    .tab-service-f
+        .tab-service-f__head.flex.flex_sb
+            div
+                .h-m Резюме
+                p Доступно: 2
+                p Активных: 2
+                p Не активных: 4
+            div
+                a.btn-link.profile-btn(href="#") Добавть резюме
+
+        .tab-service-list
+            .tab-service-r
+                .tab-service-c1
+                .tab-service-c2
+                    .tab-service-obj.tab-service-obj_head
+                        span Всего резюме
+                        span 23
+                .tab-service-c3
+                    .tab-service-ss.green
+                        p 3 активных заказа
+
+            .tab-service-r
+                .tab-service-c1
+                    input(type="checkbox")
+                .tab-service-c2
+                    a.tab-service-obj(href="#")
+                        span Название резюме
+                        span Архангельск
+                .tab-service-c3
+                    .tab-service-ss.green
+                        span Выделить
+                        p до 23.04
+
+            .tab-service-r
+                .tab-service-c1
+                    input(type="checkbox")
+                .tab-service-c2
+                    a.tab-service-obj(href="#")
+                        span Название резюме
+                        span Архангельск
+                .tab-service-c3
+                    .tab-service-ss
+
+            .tab-service-r
+                .tab-service-c1
+                    input(type="checkbox")
+                .tab-service-c2
+                    a.tab-service-obj(href="#")
+                        span Название резюме
+                        span Архангельск
+                .tab-service-c3
+                    .tab-service-ss.red
+                        span Первый
+                        p до 23.04
+
+    .tab-service-cnt
+        .flex
+            .tab-service-cnt__l
+                .tab-service-cnt__row.flex
+                    button.tab-service-cnt__btn(type="button") Выделить цветом
+                    .tab-service-cnt__price 250
+                .tab-service-cnt__row.flex
+                    button.tab-service-cnt__btn(type="button") В раздел срочно
+                    .tab-service-cnt__price 100
+                .tab-service-cnt__row.flex
+                    button.tab-service-cnt__btn(type="button") Первый в рубрике
+                    .tab-service-cnt__price 200
+            .tab-service-cnt__r
+                div Выбрано резюме: 2
+                .ts-inp.flex.flex_sb
+                    .ts-label Срок заказа в неделях
+                    input.ts-input(type="number" min="0" value="1")
+                div
+                    p Выбраны услуги
+                    p Выделение цветом 500 руб
+                    p Первый в рубрике 400 руб
+                div
+                    strong к оплате 3 400 руб
+
+    // end вакансии
+    .tab-service-f
+        .tab-service-f__head.flex.flex_sb
+            div
+                .h-m Услуги
+                p Доступно: 2
+                p Активных: 2
+                p Не активных: 4
+            div
+                a.btn-link.profile-btn(href="#") Добавть услугу
+
+        .tab-service-list
+            .tab-service-r
+                .tab-service-c1
+                .tab-service-c2
+                    .tab-service-obj.tab-service-obj_head
+                        span Всего услуг
+                        span 23
+                .tab-service-c3
+                    .tab-service-ss.green
+                        p 3 активных заказа
+
+            .tab-service-r
+                .tab-service-c1
+                    input(type="checkbox")
+                .tab-service-c2
+                    a.tab-service-obj(href="#")
+                        span Название услуги
+                        span Архангельск
+                .tab-service-c3
+                    .tab-service-ss.green
+                        span Выделить
+                        p до 23.04
+
+            .tab-service-r
+                .tab-service-c1
+                    input(type="checkbox")
+                .tab-service-c2
+                    a.tab-service-obj(href="#")
+                        span Название услуги
+                        span Архангельск
+                .tab-service-c3
+                    .tab-service-ss
+
+            .tab-service-r
+                .tab-service-c1
+                    input(type="checkbox")
+                .tab-service-c2
+                    a.tab-service-obj(href="#")
+                        span Название услуги
+                        span Архангельск
+                .tab-service-c3
+                    .tab-service-ss.red
+                        span Первый
+                        p до 23.04
+
+    .tab-service-cnt
+        .flex
+            .tab-service-cnt__l
+                .tab-service-cnt__row.flex
+                    button.tab-service-cnt__btn(type="button") Выделить цветом
+                    .tab-service-cnt__price 250
+                .tab-service-cnt__row.flex
+                    button.tab-service-cnt__btn(type="button") В раздел срочно
+                    .tab-service-cnt__price 100
+                .tab-service-cnt__row.flex
+                    button.tab-service-cnt__btn(type="button") Первый в рубрике
+                    .tab-service-cnt__price 200
+            .tab-service-cnt__r
+                div Выбрано услуг: 2
+                .ts-inp.flex.flex_sb
+                    .ts-label Срок заказа в неделях
+                    input.ts-input(type="number" min="0" value="1")
+                div
+                    p Выбраны услуги
+                    p Выделение цветом 500 руб
+                    p Первый в рубрике 400 руб
+                div
+                    strong к оплате 3 400 руб
+
+    // end услуги
+
+    .basket
+        .basket__wrapper.flex
+            .basket__c1
+                .basket__cart(style="background-image:url('images/shopping-cart-of-checkered-design.svg')")
+            .basket__c2
+                .basket__sel
+                    p Выбраны услуги
+                    p 2 Выделение цветом 500 руб.
+                    p 2 Первый в рубрике 400 руб.
+                .basket__sum к оплате 7 900 руб
+            .basket__c3
+                .basket__promo
+                    .basket__promo-label Промокод
+                    input.basket__promo-input(type="text")
+                .basket__pay-btn
+                    input.basket__pay-submit(type="submit" value="Оплатить")
+
+    // end корзина
+// end .tab-service

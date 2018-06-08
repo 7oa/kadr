@@ -1,10 +1,16 @@
 .header {
     background: $green-d;
     color: $white;
-    height: 80px;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
 }
 .header-wrapper{
-    padding-top: 10px;
+    padding-top: 7px;
 }
 .menu-btn{
     width: 30px;

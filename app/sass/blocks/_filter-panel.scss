@@ -2,7 +2,7 @@
   display: none;
   background-color: $green-m;
   position: absolute;
-  top: 80px;
+  top: 70px;
   z-index: 9;
   width: 100%;
   padding: 20px 0;
@@ -13,6 +13,7 @@
     width: 100%;
     padding: 0 5px;
     box-sizing: border-box;
+    height: 23px;
   }
   &__submit{
     background-repeat: no-repeat;
@@ -30,5 +31,10 @@
     font-weight: $bold;
     padding-left: 30px;
     padding-right: 10px;
+  }
+  &__select{
+    width: 100%;
+    height: 23px;
+    box-sizing: border-box;
   }
 }

@@ -6,8 +6,8 @@
   }
 }
 .tab-journal-f{
-  padding-bottom: 40px;
-  margin-bottom: 40px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
   border-bottom: 2px solid $green-d;
   &:last-of-type{
     border-bottom: none;
@@ -39,6 +39,15 @@
     border: 1px solid $gray-d;
     width: 130px;
     height: 80px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  &__img2{
+    @include bg-img(cover);
+    border-radius: 20px;
+    border: 1px solid $gray-d;
+    width: 130px;
+    height: 150px;
     position: relative;
     margin-bottom: 20px;
   }
@@ -230,6 +239,7 @@
   flex:  0 0 auto;
 }
 .tab-service-cnt{
+  margin-bottom: 30px;
   &__r{
     flex: 1 1 auto;
   }

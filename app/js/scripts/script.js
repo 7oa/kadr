@@ -1,4 +1,15 @@
 // js jquery
+$(document).mouseup(function (e){
+    var div = $(".header-menu-wrapper.open");
+    var btn = $(".js-show-menu");
+    if (!btn.is(e.target)
+        && !div.is(e.target)
+        && div.has(e.target).length === 0) {
+        div.removeClass('open').animate({
+            left: '-200px'
+        }, 200);
+    }
+});
 $(document).ready(function() {
     $('.index-cat__slider').slick({
         infinite: true,

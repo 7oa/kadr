@@ -1,0 +1,106 @@
+.tab.tab-journal
+    .tab-journal-f
+        .tab-journal-head.flex
+            .tab-journal-head__inf
+                .h-m Резюме
+                p Всего доступно: 3
+                p Опубликовано: 2
+                p Можно опубликовать: 1
+            .tab-journal-head__btns
+                a.btn-link.profile-btn(href="#") Добавть резюме
+                br
+                a.btn-link.profile-btn(href="#") Поднять все активные
+        .journal-list
+            .journal-list__item
+                .flex
+                    .journal-list__obj
+                        include _rezume-item
+                        .journal-list__item-edit
+                            a.btn-link(href="#")
+                                span.span-green Отклики
+                                span.span-yellow 3
+                            a.btn-link.btn-green2(href="#") Редактировать
+                    .journal-list__btns
+                        button.icon-btn(title="Поднять")
+                            i.material-icons arrow_upward
+                        button.icon-btn(title="Включить/выключить")
+                            i.material-icons check
+                        button.icon-btn(title="Удалить")
+                            i.material-icons delete
+
+            .journal-list__item
+                .flex
+                    .journal-list__obj
+                        include _rezume-item
+                        .journal-list__item-edit
+                            a.btn-link(href="#")
+                                span.span-green Отклики
+                                span.span-yellow 0
+                            a.btn-link.btn-green2(href="#") Редактировать
+                    .journal-list__btns
+                        button.icon-btn(title="Поднять")
+                            i.material-icons arrow_upward
+                        button.icon-btn.icon-btn__off(title="Включить/выключить")
+                            i.material-icons check
+                        button.icon-btn(title="Удалить")
+                            i.material-icons delete
+    .tab-journal-f
+        .tab-journal-head.flex
+            .tab-journal-head__inf
+                .h-m Услуги
+                p Количество не ограничено
+            .tab-journal-head__btns
+                a.btn-link.profile-btn(href="#") Добавть услугу
+        .journal-list
+            .journal-list__item.flex
+                .journal-list__obj
+                    include _rezume-item
+                    .journal-list__item-edit
+                        a.btn-link(href="#")
+                            span.span-green Отклики
+                            span.span-yellow 3
+                        a.btn-link.btn-green2(href="#") Редактировать
+                .journal-list__btns
+                    button.icon-btn(title="Поднять")
+                        i.material-icons arrow_upward
+                    button.icon-btn(title="Включить/выключить")
+                        i.material-icons check
+                    button.icon-btn(title="Удалить")
+                        i.material-icons delete
+            .journal-list__item.flex
+                .journal-list__obj
+                    include _rezume-item
+                    .journal-list__item-edit
+                        a.btn-link(href="#")
+                            span.span-green Отклики
+                            span.span-yellow 3
+                        a.btn-link.btn-green2(href="#") Редактировать
+                .journal-list__btns
+                    button.icon-btn(title="Поднять")
+                        i.material-icons arrow_upward
+                    button.icon-btn.icon-btn__off(title="Включить/выключить")
+                        i.material-icons check
+                    button.icon-btn(title="Удалить")
+                        i.material-icons delete
+    .tab-journal-f
+        .ss-bl
+            .ss-bl__h.h-s Подписки
+            .ss-item.flex
+                .ss-item__ttl Название подписки
+                button.icon-btn(title="Удалить")
+                    i.material-icons delete
+            .ss-item.flex
+                .ss-item__ttl Название подписки
+                button.icon-btn(title="Удалить")
+                        i.material-icons delete
+        .ss-bl
+            .ss-bl__h.h-s Избранное
+            .ss-item.flex
+                .ss-item__ttl Название
+                button.icon-btn(title="Удалить")
+                    i.material-icons delete
+            .ss-item.flex
+                .ss-item__ttl Название
+                button.icon-btn(title="Удалить")
+                    i.material-icons delete
+// end .tab-journal
